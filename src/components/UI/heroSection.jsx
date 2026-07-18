@@ -1,11 +1,8 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Country } from "../../pages/Country";
+import { NavLink } from "react-router";
 
 export const HeroSection = () => {
-
-  const startExploring = () => {
-    <Country/>
-  }
 
   return (
     <main className="hero-section main">
@@ -20,8 +17,8 @@ export const HeroSection = () => {
             Discover the world with our travel website, where you can explore new
             destinations, plan your next adventure, and connect with fellow travelers.
           </p>
-          <button className="hero-button" onClick={startExploring}>
-            Start Exploring <FaLongArrowAltRight />
+          <button className="hero-button">
+            <NavLink to="/country">Start Exploring <FaLongArrowAltRight /></NavLink>
           </button>
         </div>
         <div className="hero-image">
